@@ -1,13 +1,14 @@
 package com.cscorner.universe;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
+import android.content.Intent;
 
-import androidx.activity.EdgeToEdge;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
 
 import java.util.ArrayList;
 
@@ -34,6 +35,31 @@ customuggridadapter adapter;
         uGshapeArrayList.add(ug4);
         adapter = new customuggridadapter(uGshapeArrayList,getApplicationContext());
         uggrid.setAdapter(adapter);
+        uggrid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent i;
+                UGshape selectedug = uGshapeArrayList.get(position);
+                switch(selectedug.getUgname()){
+                    case "UG 1":
+                        i = new Intent(getApplicationContext(), ug1sem.class);
+                        break;
+                    case "UG 2":
+                       i = new Intent(getApplicationContext(), ug2sem.class);
+                       break;
+                    case "UG 3":
+                        i = new Intent(getApplicationContext(), ug3sem.class);
+                        break;
+                    case "UG 4":
+                        i = new Intent(getApplicationContext(), ug4sem.class);
+                        break;
+                    default :
+                        return;
+                }
+                startActivity(i);
+
+            }
+        });
 
     }
 }
