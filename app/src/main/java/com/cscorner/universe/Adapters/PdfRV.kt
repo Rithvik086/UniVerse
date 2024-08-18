@@ -10,14 +10,17 @@ import androidx.recyclerview.widget.RecyclerView
 import com.cscorner.universe.R
 import com.cscorner.universe.model.BookModel
 
-class PdfRV:RecyclerView.Adapter<PdfRV.pdfViewHolder>() {
-     private lateinit var pdflist : List<BookModel>
+class PdfRV(private val onDownloadClick : (BookModel) -> Unit):RecyclerView.Adapter<PdfRV.pdfViewHolder>() {
+     private  var pdflist : List<BookModel> = emptyList()
 
     inner class pdfViewHolder(itemView: View) :RecyclerView.ViewHolder(itemView){
         val pdfname:TextView = itemView.findViewById(R.id.pdfnametextView)
 val downlaodpdf:Button = itemView.findViewById(R.id.pdfdownload)
         fun bind(pdf:BookModel){
             pdfname.text = pdf.name
+            downlaodpdf.setOnClickListener {
+                onDownloadClick(pdf)
+            }
 
         }
 
