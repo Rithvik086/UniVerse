@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#747a7d"
-    tools:context=".Fragments.SemGridFragment">
+    tools:context=".fragments.SemGridFragment">
 
     <!-- Header TextView -->
     <TextView

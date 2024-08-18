@@ -1,10 +1,8 @@
-package com.cscorner.universe.ViewModel
+package com.cscorner.universe.viewmodel
 
 import android.app.Application
-import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import com.cscorner.universe.model.BookModel
 import com.cscorner.universe.repository.FileRepo
 import com.google.firebase.storage.FirebaseStorage

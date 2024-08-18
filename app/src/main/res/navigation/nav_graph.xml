@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/uggridFragment"
-        android:name="com.cscorner.universe.Fragments.UggridFragment"
+        android:name="com.cscorner.universe.fragments.UggridFragment"
         android:label="fragment_uggrid"
         tools:layout="@layout/fragment_uggrid" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/semGridFragment"
-        android:name="com.cscorner.universe.Fragments.SemGridFragment"
+        android:name="com.cscorner.universe.fragments.SemGridFragment"
         android:label="fragment_sem_grid"
         tools:layout="@layout/fragment_sem_grid" >
         <argument
@@ -29,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/pdfListFragment"
-        android:name="com.cscorner.universe.Fragments.PdfListFragment"
+        android:name="com.cscorner.universe.fragments.PdfListFragment"
         android:label="fragment_pdf_list"
         tools:layout="@layout/fragment_pdf_list" >
         <argument
@@ -47,7 +47,7 @@
     </fragment>
     <fragment
         android:id="@+id/semSubjectListFragment"
-        android:name="com.cscorner.universe.Fragments.SemSubjectListFragment"
+        android:name="com.cscorner.universe.fragments.SemSubjectListFragment"
         android:label="fragment_sem_subject_list"
         tools:layout="@layout/fragment_sem_subject_list" >
         <argument

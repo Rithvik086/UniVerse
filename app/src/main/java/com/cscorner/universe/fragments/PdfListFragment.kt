@@ -1,7 +1,7 @@
-package com.cscorner.universe.Fragments
+package com.cscorner.universe.fragments
 
 import android.os.Bundle
-import android.util.Log
+
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -12,9 +12,9 @@ import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.airbnb.lottie.LottieAnimationView
-import com.cscorner.universe.Adapters.PdfRV
+import com.cscorner.universe.adapters.PdfRV
 import com.cscorner.universe.R
-import com.cscorner.universe.ViewModel.PdfViewModel
+import com.cscorner.universe.viewmodel.PdfViewModel
 
 
 
@@ -57,7 +57,7 @@ pdfadp = PdfRV{bookModel -> pdfViewModel.downloadPdf(ugYear,ugSem,sub,bookModel.
 
         pdfViewModel.pdfprot.observe(viewLifecycleOwner, Observer { pdfList ->
 
-            Log.d("PdfFragment", "PDF List: $pdfList")
+
 
 
 

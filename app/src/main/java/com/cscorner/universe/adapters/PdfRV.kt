@@ -1,6 +1,5 @@
-package com.cscorner.universe.Adapters
+package com.cscorner.universe.adapters
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -37,7 +36,7 @@ val downlaodpdf:Button = itemView.findViewById(R.id.pdfdownload)
 
     override fun onBindViewHolder(holder: pdfViewHolder, position: Int) {
         val currentpdf = pdflist[position]
-        Log.d("PdfRV", "Binding item at position $position: $currentpdf")
+
         holder.bind(currentpdf)
 
     }

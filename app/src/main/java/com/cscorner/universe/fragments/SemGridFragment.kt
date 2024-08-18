@@ -1,4 +1,4 @@
-package com.cscorner.universe.Fragments
+package com.cscorner.universe.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -12,9 +12,9 @@ import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.airbnb.lottie.LottieAnimationView
-import com.cscorner.universe.Adapters.SemGridRV
+import com.cscorner.universe.adapters.SemGridRV
 import com.cscorner.universe.R
-import com.cscorner.universe.ViewModel.SemViewModel
+import com.cscorner.universe.viewmodel.SemViewModel
 import com.cscorner.universe.model.SemesterModel
 
 

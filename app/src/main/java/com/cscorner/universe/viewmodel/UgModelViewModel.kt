@@ -1,6 +1,5 @@
-package com.cscorner.universe.ViewModel
+package com.cscorner.universe.viewmodel
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.cscorner.universe.R

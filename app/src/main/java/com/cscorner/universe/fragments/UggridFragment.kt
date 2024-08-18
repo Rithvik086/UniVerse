@@ -1,4 +1,4 @@
-package com.cscorner.universe.Fragments
+package com.cscorner.universe.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,12 +9,11 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.airbnb.lottie.LottieAnimationView
-import com.cscorner.universe.Adapters.UgGridRV
+import com.cscorner.universe.adapters.UgGridRV
 import com.cscorner.universe.R
-import com.cscorner.universe.ViewModel.UgModelViewModel
+import com.cscorner.universe.viewmodel.UgModelViewModel
 import com.cscorner.universe.model.UGYearModel
 
 private lateinit var recyclerView: RecyclerView

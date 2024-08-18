@@ -1,4 +1,4 @@
-package com.cscorner.universe.Adapters
+package com.cscorner.universe.adapters
 
 import android.view.LayoutInflater
 import android.view.View
