@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="25dp"
+    >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="25dp"
+            android:elevation="20dp"
+            android:layout_margin="8dp"
+            android:id="@+id/cvugitem"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="109dp"
+                android:layout_height="109dp"
+
+                android:scaleType="fitXY"
+                android:id="@+id/ugitemimg"
+
+
+
+               />
+
+
+        </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="8dp"
+        android:backgroundTint="#fda14d"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UGname"
+            android:textColor="@color/white"
+
+
+            android:id="@+id/ugitemname"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"/>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</LinearLayout>

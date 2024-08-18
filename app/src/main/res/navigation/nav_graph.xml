@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/uggridFragment">
+
+    <fragment
+        android:id="@+id/uggridFragment"
+        android:name="com.cscorner.universe.Fragments.UggridFragment"
+        android:label="fragment_uggrid"
+        tools:layout="@layout/fragment_uggrid" >
+        <action
+            android:id="@+id/action_uggridFragment_to_semGridFragment"
+            app:destination="@id/semGridFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/semGridFragment"
+        android:name="com.cscorner.universe.Fragments.SemGridFragment"
+        android:label="fragment_sem_grid"
+        tools:layout="@layout/fragment_sem_grid" >
+        <argument
+            android:name="ugYearName"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_semGridFragment_to_semSubjectListFragment"
+            app:destination="@id/semSubjectListFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/pdfListFragment"
+        android:name="com.cscorner.universe.Fragments.PdfListFragment"
+        android:label="fragment_pdf_list"
+        tools:layout="@layout/fragment_pdf_list" >
+        <argument
+            android:name="ugYearName"
+            app:argType="string"/>
+        <argument
+            android:name="ugSemName"
+            app:argType="string"/>
+        <argument
+            android:name="subselected"
+            app:argType="string"/>
+
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/semSubjectListFragment"
+        android:name="com.cscorner.universe.Fragments.SemSubjectListFragment"
+        android:label="fragment_sem_subject_list"
+        tools:layout="@layout/fragment_sem_subject_list" >
+        <argument
+            android:name="ugYearName"
+            app:argType="string"/>
+        <argument
+            android:name="ugSemName"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_semSubjectListFragment_to_pdfListFragment"
+            app:destination="@id/pdfListFragment">
+            <argument
+                android:name="subselected"
+                app:argType="string"/>
+        </action>
+    </fragment>
+
+</navigation>

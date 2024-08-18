@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "990299620365",
+    "project_id": "firestore-243c0",
+    "storage_bucket": "firestore-243c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990299620365:android:368f226bbd9643cb4b4144",
+        "android_client_info": {
+          "package_name": "com.cscorner.universe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpgjLBqVWKIJGaLtYQXUvnGqZJ6pywNQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

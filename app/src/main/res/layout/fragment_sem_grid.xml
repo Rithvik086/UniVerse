@@ -1,0 +1,57 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#747a7d"
+    tools:context=".Fragments.SemGridFragment">
+
+    <!-- Header TextView -->
+    <TextView
+        android:id="@+id/textViewsem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Please Select Your Semester"
+        android:textAlignment="center"
+        android:textColor="#fda14d"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- RecyclerView for Buttons -->
+
+    <!-- Lottie Animation -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewsem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@id/animationsem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewsem"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <com.airbnb.lottie.LottieAnimationView
+
+        android:id="@+id/animationsem"
+        android:layout_width="412dp"
+        android:layout_height="215dp"
+        android:layout_marginBottom="4dp"
+        android:background="#a8a8a8"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/semanimation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
