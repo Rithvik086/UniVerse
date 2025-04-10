@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:padding="24dp">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/maintenanceImage"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+
+        android:contentDescription="Maintenance"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/maintenanceText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/waiting"
+        />
+
+    <TextView
+        android:id="@+id/maintenanceText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="We’re currently undergoing maintenance."
+        android:textAlignment="center"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintTop_toBottomOf="@id/maintenanceImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/maintenanceSubText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Hang tight while we improve your experience. We'll be back shortly!"
+        android:textAlignment="center"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif"
+        app:layout_constraintTop_toBottomOf="@id/maintenanceText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

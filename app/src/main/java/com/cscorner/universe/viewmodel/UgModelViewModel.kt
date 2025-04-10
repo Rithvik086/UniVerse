@@ -19,6 +19,7 @@ class UgModelViewModel : ViewModel() {
             UGYearModel(R.drawable.ug2final,"UG 2") ,
             UGYearModel(R.drawable.ug3final,"UG 3") ,
             UGYearModel(R.drawable.ug4final,"UG 4") ,
+
         )
         _ugList.value = Uglist
     }
